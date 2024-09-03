@@ -1,0 +1,183 @@
+vue.global.js:10906 You are running a development build of Vue.
+Make sure to use the production build (*.prod.js) when deploying for production.
+hr-management:117 Server response: Objectconfig: {transitional: {…}, adapter: Array(3), transformRequest: Array(1), transformResponse: Array(1), timeout: 0, …}data: "\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>인적 자원 관리</title>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js\"></script>\r\n    <script src=\"https://unpkg.com/vue@3.2.36/dist/vue.global.js\"></script>\r\n    <script src=\"https://unpkg.com/axios/dist/axios.min.js\"></script>\r\n    <style>\r\n        td {\r\n            text-align: center;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n<div id=\"app\" class=\"container\">\r\n    <div class=\"jumbotron text-center\">\r\n        <h2>인적 자원 관리</h2>\r\n        <p v-if=\"users.length === 0\">사용자 데이터를 불러오고 있습니다...</p>\r\n        <p v-else>{{ users }}</p> <!-- 데이터를 간단하게 출력 -->\r\n    </div>\r\n    <div class=\"mb-3\">\r\n        <button @click=\"showAddUserForm\" class=\"btn btn-success\">사용자 추가</button>\r\n    </div>\r\n    <table class=\"table table-hover table-striped\">\r\n        <thead>\r\n            <tr class=\"table-success text-center\">\r\n                <th>이름</th>\r\n                <th>이메일</th>\r\n                <th>닉네임</th>\r\n                <th>생일</th>\r\n                <th>전화번호</th>\r\n                <th>진행중인 프로젝트</th>\r\n                <th>현재 권한</th>\r\n                <th>액션</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr v-if=\"users.length === 0\">\r\n                <td colspan=\"8\">사용자 데이터가 없습니다.</td>\r\n            </tr>\r\n            <tr v-else v-for=\"user in users\" :key=\"user.email\">\r\n                <td>{{user.name}}</td>\r\n                <td>{{user.email}}</td>\r\n                <td>{{user.nickname}}</td>\r\n                <td>{{user.birth}}</td>\r\n                <td>{{user.phone}}</td>\r\n                <td>\r\n                    <div v-for=\"project in user.projects\">{{ project.title }}</div>\r\n                </td>\r\n                <td>\r\n                    <div v-for=\"team in user.teams\">{{ team.auth }}</div>\r\n                </td>\r\n                <td>\r\n                    <button @click=\"editUser(user)\" class=\"btn btn-primary btn-sm\">수정</button>\r\n                    <button @click=\"deleteUser(user.email)\" class=\"btn btn-danger btn-sm\">삭제</button>\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n\r\n    <!-- 사용자 추가 및 수정 모달 -->\r\n    <div v-if=\"showForm\">\r\n        <form @submit.prevent=\"saveUser\">\r\n            <div>\r\n                <label>이름:</label>\r\n                <input v-model=\"formData.name\" required>\r\n            </div>\r\n            <div>\r\n                <label>이메일:</label>\r\n                <input v-model=\"formData.email\" required>\r\n            </div>\r\n            <div>\r\n                <label>생일:</label>\r\n                <input type=\"date\" v-model=\"formData.birth\" required>\r\n            </div>\r\n            <div>\r\n                <label>전화번호:</label>\r\n                <input v-model=\"formData.phone\" required>\r\n            </div>\r\n            <div>\r\n                <label>닉네임:</label>\r\n                <input v-model=\"formData.nickname\" required>\r\n            </div>\r\n            <div>\r\n                <label>비밀번호:</label>\r\n                <input type=\"password\" v-model=\"formData.password\" required>\r\n            </div>\r\n            <button type=\"submit\">저장</button>\r\n            <button @click=\"showForm = false\">취소</button>\r\n        </form>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n    const app = Vue.createApp({\r\n        data() {\r\n            return {\r\n                users: [],  // 초기 상태는 빈 배열로 설정\r\n                showForm: false,\r\n                formData: {\r\n                    name: '',\r\n                    email: '',\r\n                    birth: '',\r\n                    phone: '',\r\n                    nickname: '',\r\n                    password: ''\r\n                },\r\n                editMode: false\r\n            };\r\n        },\r\n        methods: {\r\n        \tfetchUsers() {\r\n        \t    axios.get('/hr-management')\r\n        \t        .then(response => {\r\n        \t            console.log('Server response:', response);  // 서버에서 받은 전체 응답을 출력\r\n        \t            if (response.data) {\r\n        \t                this.users = response.data;\r\n        \t                console.log('Fetched users:', this.users);  // 이 부분에서 users가 올바르게 설정되는지 확인\r\n        \t            } else {\r\n        \t                console.error('Error: Received empty data.');\r\n        \t            }\r\n        \t        })\r\n        \t        .catch(error => {\r\n        \t            console.error('Error fetching users:', error);\r\n        \t        });\r\n        \t},\r\n            showAddUserForm() {\r\n                this.showForm = true;\r\n                this.editMode = false;\r\n                this.formData = { name: '', email: '', birth: '', phone: '', nickname: '', password: '' };\r\n            },\r\n            editUser(user) {\r\n                this.showForm = true;\r\n                this.editMode = true;\r\n                this.formData = { ...user, password: '' }; // 비밀번호는 빈 문자열로 설정\r\n            },\r\n            saveUser() {\r\n                const url = this.editMode ? '/updateUser' : '/addUser';\r\n                axios.post(url, this.formData)\r\n                    .then(response => {\r\n                        this.fetchUsers();\r\n                        this.showForm = false;\r\n                    })\r\n                    .catch(error => {\r\n                        console.error('Error saving user:', error);\r\n                        alert('사용자 저장 중 오류 발생');\r\n                    });\r\n            },\r\n            deleteUser(email) {\r\n                if (confirm('정말 삭제하시겠습니까?')) {\r\n                    axios.post('/deleteUser', { email })\r\n                        .then(response => {\r\n                            this.fetchUsers();\r\n                        })\r\n                        .catch(error => {\r\n                            console.error('Error deleting user:', error);\r\n                            alert('사용자 삭제 중 오류 발생');\r\n                        });\r\n                }\r\n            }\r\n        },\r\n        mounted() {\r\n            this.fetchUsers();  // 페이지 로드 시 데이터 불러오기\r\n        }\r\n    });\r\n\r\n    app.mount('#app');\r\n</script>\r\n\r\n</body>\r\n</html>\r\n"headers: r {connection: 'keep-alive', content-language: 'ko-KR', content-length: '6434', content-type: 'text/html;charset=UTF-8', date: 'Wed, 14 Aug 2024 04:40:32 GMT', …}request: XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}status: 200statusText: ""[[Prototype]]: Object
+hr-management:120 Fetched users: 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>인적 자원 관리</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="app" class="container">
+    <div class="jumbotron text-center">
+        <h2>인적 자원 관리</h2>
+        <p v-if="users.length === 0">사용자 데이터를 불러오고 있습니다...</p>
+        <p v-else>{{ users }}</p> <!-- 데이터를 간단하게 출력 -->
+    </div>
+    <div class="mb-3">
+        <button @click="showAddUserForm" class="btn btn-success">사용자 추가</button>
+    </div>
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr class="table-success text-center">
+                <th>이름</th>
+                <th>이메일</th>
+                <th>닉네임</th>
+                <th>생일</th>
+                <th>전화번호</th>
+                <th>진행중인 프로젝트</th>
+                <th>현재 권한</th>
+                <th>액션</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-if="users.length === 0">
+                <td colspan="8">사용자 데이터가 없습니다.</td>
+            </tr>
+            <tr v-else v-for="user in users" :key="user.email">
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.nickname}}</td>
+                <td>{{user.birth}}</td>
+                <td>{{user.phone}}</td>
+                <td>
+                    <div v-for="project in user.projects">{{ project.title }}</div>
+                </td>
+                <td>
+                    <div v-for="team in user.teams">{{ team.auth }}</div>
+                </td>
+                <td>
+                    <button @click="editUser(user)" class="btn btn-primary btn-sm">수정</button>
+                    <button @click="deleteUser(user.email)" class="btn btn-danger btn-sm">삭제</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 사용자 추가 및 수정 모달 -->
+    <div v-if="showForm">
+        <form @submit.prevent="saveUser">
+            <div>
+                <label>이름:</label>
+                <input v-model="formData.name" required>
+            </div>
+            <div>
+                <label>이메일:</label>
+                <input v-model="formData.email" required>
+            </div>
+            <div>
+                <label>생일:</label>
+                <input type="date" v-model="formData.birth" required>
+            </div>
+            <div>
+                <label>전화번호:</label>
+                <input v-model="formData.phone" required>
+            </div>
+            <div>
+                <label>닉네임:</label>
+                <input v-model="formData.nickname" required>
+            </div>
+            <div>
+                <label>비밀번호:</label>
+                <input type="password" v-model="formData.password" required>
+            </div>
+            <button type="submit">저장</button>
+            <button @click="showForm = false">취소</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                users: [],  // 초기 상태는 빈 배열로 설정
+                showForm: false,
+                formData: {
+                    name: '',
+                    email: '',
+                    birth: '',
+                    phone: '',
+                    nickname: '',
+                    password: ''
+                },
+                editMode: false
+            };
+        },
+        methods: {
+        	fetchUsers() {
+        	    axios.get('/hr-management')
+        	        .then(response => {
+        	            console.log('Server response:', response);  // 서버에서 받은 전체 응답을 출력
+        	            if (response.data) {
+        	                this.users = response.data;
+        	                console.log('Fetched users:', this.users);  // 이 부분에서 users가 올바르게 설정되는지 확인
+        	            } else {
+        	                console.error('Error: Received empty data.');
+        	            }
+        	        })
+        	        .catch(error => {
+        	            console.error('Error fetching users:', error);
+        	        });
+        	},
+            showAddUserForm() {
+                this.showForm = true;
+                this.editMode = false;
+                this.formData = { name: '', email: '', birth: '', phone: '', nickname: '', password: '' };
+            },
+            editUser(user) {
+                this.showForm = true;
+                this.editMode = true;
+                this.formData = { ...user, password: '' }; // 비밀번호는 빈 문자열로 설정
+            },
+            saveUser() {
+                const url = this.editMode ? '/updateUser' : '/addUser';
+                axios.post(url, this.formData)
+                    .then(response => {
+                        this.fetchUsers();
+                        this.showForm = false;
+                    })
+                    .catch(error => {
+                        console.error('Error saving user:', error);
+                        alert('사용자 저장 중 오류 발생');
+                    });
+            },
+            deleteUser(email) {
+                if (confirm('정말 삭제하시겠습니까?')) {
+                    axios.post('/deleteUser', { email })
+                        .then(response => {
+                            this.fetchUsers();
+                        })
+                        .catch(error => {
+                            console.error('Error deleting user:', error);
+                            alert('사용자 삭제 중 오류 발생');
+                        });
+                }
+            }
+        },
+        mounted() {
+            this.fetchUsers();  // 페이지 로드 시 데이터 불러오기
+        }
+    });
+
+    app.mount('#app');
+</script>
+
+</body>
+</html>
+
+deleteUser:1 
+        
+        
+       Failed to load resource: the server responded with a status of 400 ()
+hr-management:158 Error deleting user: ye
+(anonymous) @ hr-management:158

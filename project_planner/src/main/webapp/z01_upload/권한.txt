@@ -1,0 +1,4 @@
+
+간트 - a(all prj) p m(r) 
+캘린더 - a(all prj) p m(not prj), noprj x, no team > 팀 x 
+

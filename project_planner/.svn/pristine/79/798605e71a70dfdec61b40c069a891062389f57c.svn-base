@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/a00_com/bootstrap.min.css">
+<style>
+td {
+   text-align: center;
+}
+</style>
+<script src="/a00_com/jquery.min.js"></script>
+<script src="/a00_com/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script
+   src="https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api"
+   type="text/javascript"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+
+      var vm = Vue.createApp({
+         name:"App",
+         data(){
+            return {
+               msg: "사원정보 조회",
+               sch: { empno: "", name: "" }, // 검색할 내용 
+               emplist: [] // 검색된 내용 리스트
+            };
+         },
+         methods:{
+            search(){
+               // 사원번호나 이름을 입력시 검색되는 기능
+               axios.get("/getEmpList?empno="+this.sch.empno+"&name="+this.sch.name)
+               .then((response)=>{
+                  this.emplist = response.data
+               })
+            },
+            goBack() {
+               window.location.href = 'mail'; // 페이지 이동
+            }
+         },
+         watch: {
+                'sch.empno': 'search',
+                'sch.name': 'search'
+            },
+         created(){
+            // 라이프사이클시, 시작시 처리되는 내용
+            this.search()
+         }
+      }).mount(".container")
+   });
+</script>
+</head>
+<body>
+   <div class="container">
+      <div class="jumbotron text-center">
+         <h2>{{msg}}</h2>
+      </div>
+      <!-- 사원번호와 사원명 입력하는 칸 -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+         <input v-model="sch.empno" @keyup.enter="search"
+            class="form-control mr-sm-2" placeholder="사원번호" />
+         <!-- 키를 입력할 때, enter 입력시 search 이벤트 핸들러 메서드 호출.. -->
+         <input v-model="sch.name" @keyup.enter="search"
+            class="form-control mr-sm-2" placeholder="사원명" />
+         <!-- 상세화면 모달창 로딩을 위해서 호출되는 보이지 않는 div 설정.. -->   
+         <div id="deFrmBtn" data-toggle="modal" data-target="#exampleModalCenter"><div>
+         
+         <!-- 뒤로가기 버튼 추가 -->
+         <button @click="goBack" class="btn btn-secondary ml-2">뒤로가기</button>
+      </nav>
+      <table class="table table-hover table-striped">
+         <col width="20%">
+         <col width="20%">
+         <col width="20%">
+         <col width="20%">
+         <col width="20%">
+         <thead>
+            <tr class="table-success text-center">
+               <th>사원번호</th>
+               <th>이름</th>
+               <th>이메일</th>
+               <th>역할</th>
+               <th>프로젝트</th>
+            </tr>
+         </thead>
+         <tbody>
+            <!-- 사원정보리스트 -->
+            <tr v-for="emp in emplist">
+               <td>{{emp.empno}}</td>
+               <td>{{emp.name}}</td>
+               <td>{{emp.email}}</td>
+               <td>{{emp.role}}</td>
+               <td>{{emp.projectStatus}}</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</body>
+</html>

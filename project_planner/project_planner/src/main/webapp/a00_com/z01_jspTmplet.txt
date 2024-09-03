@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=${encoding}"
+    pageEncoding="${encoding}"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<link rel="stylesheet" href="/backweb/a00_com/a01_common.css" >
+<title>Insert title here</title>
+</head>
+<body>
+${cursor}
+</body>
+</html>

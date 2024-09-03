@@ -1,0 +1,42 @@
+spring.application.name=projectplanner
+# ìë² ì ë³´ì¤ì  projectplanner
+server.port = 7070
+
+spring.datasource.url=jdbc:oracle:thin:@192.168.0.46:1521:xe
+spring.datasource.username=final
+spring.datasource.password=1234
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.datasource.hikari.driver-class-name=oracle.jdbc.OracleDriver
+spring.datasource.hikari.maximum-pool-size=10
+
+# 리졸버 처리
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp
+
+# ì±í ìë² ìµì
+#socketServer="ws:192.168.0.17:3030/chat"
+socketServer="ws:localhost:7070/chat"
+
+# reload
+spring.devtools.restart.enabled=true
+spring.devtools.livereload.enabled=true
+
+user.upload = C:/a00_javaexp/a01_finalworkspace/project_planner/src/main/webapp/z01_upload/
+
+# 메일 처리
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=amjunha106@gmail.com
+spring.mail.password=xiwreelsqdyhtrcy
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+spring.thymeleaf.enabled=false
+
+#다국어 처리
+spring.messages.basename=messages/messages
+spring.messages.encoding=UTF-8
+spring.messages.fallback-to-system-locale=false
+
+spring.mvc.locale=en
+spring.mvc.localeResolver=fixed
