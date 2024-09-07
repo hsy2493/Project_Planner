@@ -10,14 +10,22 @@
 ![image](https://github.com/user-attachments/assets/8a381ae9-9c73-486c-9d5c-82f30f63f8f8) <br>
 ![image](https://github.com/user-attachments/assets/c904ad50-bd79-4d28-a2d5-7d44f43b44bd) <br>
 - 요구사항 정의서 : <br>
+(1) 로그인 & (2) 사원등록(회원가입) & (3) 마이페이지<br>
 ![image](https://github.com/user-attachments/assets/79637149-96fb-4481-a285-eb28d307f117) <br>
+(4) 실시간 채팅 <br>
 ![image](https://github.com/user-attachments/assets/c322f044-2a84-4996-a927-1e85424f2968) <br>
+(5) 프로젝트 예산 관리 <br>
 ![image](https://github.com/user-attachments/assets/8bf9da2e-d56e-49a9-8786-ec40eaef1b86) <br>
 - 워크 플로우 : <br>
+(1) 로그인 <br>
 ![로그인 페이지](https://github.com/user-attachments/assets/355e27cd-b825-4099-805a-d73556bf48b8) <br>
+(2) 사원등록(회원관리) <br>
 ![사원등록 페이지](https://github.com/user-attachments/assets/06490e62-9b51-45e8-9fdf-7e3d3b78a92d) <br>
+(3) 마이페이지 <br>
 ![마이 페이지](https://github.com/user-attachments/assets/34f3771a-8379-45bf-a775-59b3806e210e) <br>
+(4) 실시간 채팅 <br>
 ![image](https://github.com/user-attachments/assets/3c9b9942-6dd3-4034-a422-c912c562a97c) <br>
+(5) 프로젝트 예산 관리
 ![예산 관리 페이지](https://github.com/user-attachments/assets/c382bf6a-8354-4190-88d3-d3b1abe63bff) <br>
 - 데이터 베이스(Database) 설계/ERD 설계 : <br>
 ![image](https://github.com/user-attachments/assets/e7d228e2-ea34-4806-9af5-bebd026e8710) <br>
@@ -30,6 +38,7 @@
 - Front-end : HTML, CSS, javascript, JSP  <br>
 - Back-end : Java, Spring mvc, Spring Boot, DataBase(SQL) <br>   
 6. 작업 인원 : 3명
+  
 7. 결과물 :
 ## <화면구현>
 (1) 로그인 <br> 
