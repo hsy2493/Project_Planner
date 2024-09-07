@@ -24,7 +24,9 @@
 - PPT 자료 (https://github.com/hsy2493/Project_Planner/issues/1#issue-2509863227) <br>
 - 동영상 자료 : PPT 발표 / Project Planner 사이트 시연 (https://blog.naver.com/hsy24317/223574635493) <br>
 
-5. 작업 툴 : HTML, CSS, javascript, JSP, Java, Spring mvc, Spring Boot, DataBase(SQL)
+5. 작업 툴 :
+- Front-end : HTML, CSS, javascript, JSP  <br>
+- Back-end : Java, Spring mvc, Spring Boot, DataBase(SQL) <br>   
 6. 작업 인원 : 3명
 7. 결과물 :
 ## <화면구현>
