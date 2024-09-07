@@ -21,8 +21,10 @@
 ![예산 관리 페이지](https://github.com/user-attachments/assets/c382bf6a-8354-4190-88d3-d3b1abe63bff) <br>
 - 데이터 베이스(Database) 설계/ERD 설계 : <br>
 ![image](https://github.com/user-attachments/assets/e7d228e2-ea34-4806-9af5-bebd026e8710) <br>
-- PPT 자료 (https://github.com/hsy2493/Project_Planner/issues/1#issue-2509863227) <br>
-- 동영상 자료 : PPT 발표 / Project Planner 사이트 시연 (https://blog.naver.com/hsy24317/223574635493) <br>
+- PPT 자료 <br>
+  https://github.com/hsy2493/Project_Planner/issues/1#issue-2509863227 <br>
+- 동영상 자료 : PPT 발표 / Project Planner 사이트 시연 <br>
+  https://blog.naver.com/hsy24317/223574635493 <br>
 
 5. 작업 툴 :
 - Front-end : HTML, CSS, javascript, JSP  <br>
