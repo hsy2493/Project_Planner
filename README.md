@@ -1,8 +1,8 @@
 # <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)>
 1. 작업 기간 : 2024. 07. 22 ~ 2024. 08. 26
 2. 주제 : 프로젝트 관리 시스템(Project Management System) 사이트
-3. 목적 : Project Planner 사이트는 개발자 고객이 실시간 채팅, 간트차트, 캘린더, 게시판, 예산 관리 등의 여러 기능 페이지를 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 PMS 사이트 프로젝트 입니다.
-4. 주요 기능 : 로그인, 사원등록(회원가입), 마이페이지, 실시간 채팅(개인, 그룹), 프로젝트 예산 관리
+3. 목적 : Project Planner 사이트는 개발자 고객이 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템(PMS) 사이트 프로젝트 입니다.
+4. 주요 기능 : 로그인, 사원등록(회원가입), 마이페이지, 실시간 채팅(개인/그룹), 프로젝트 예산 관리
 - 역할 분담 : <br>
 ![image](https://github.com/user-attachments/assets/a406c40f-7b53-48b9-9ce2-fa007f8cd377) <br>
 
@@ -43,12 +43,12 @@
 
 - PPT 자료 <br>
   https://github.com/hsy2493/Project_Planner/issues/1#issue-2509863227 <br>
-- 동영상 자료 : PPT 발표 / Project Planner 사이트 시연 <br>
+- 동영상 자료 - PPT 발표 / Project Planner 사이트 시연 <br>
   https://blog.naver.com/hsy24317/223574635493 <br>
 
 5. 작업 툴 :
 - Front-end : HTML, CSS, javascript, JSP  <br>
-- Back-end : Java, Spring mvc, Spring Boot, DataBase(SQL) <br>   
+- Back-end : Java, Spring mvc, Spring Boot, DataBase <br>   
 6. 작업 인원 : 3명
   
 7. 결과물 :
@@ -69,9 +69,13 @@
 
 ## <기능구현>
 (1) 로그인 <br>
+
 (2) 사원등록 <br>
+
 (3) 마이페이지 <br>
+
 (4) 실시간 채팅 <br>
+
 (5) 프로젝트 예산 관리 <br>
 
 <b>8. 성과</b>
