@@ -2,7 +2,7 @@
 1. 작업 기간 : 2024. 07. 22 ~ 2024. 08. 26
 2. 주제 : 프로젝트 관리 시스템(Project Management System) 사이트
 3. 목적 : Project Planner 사이트는 개발자 고객이 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템(PMS) 사이트 프로젝트 입니다.
-4. 주요 기능 : 로그인, 사원등록(회원가입), 마이페이지, 실시간 채팅(개인/그룹), 프로젝트 예산 관리
+4. 주요 기능 : 로그인, 사원등록(회원가입), 마이페이지(내정보), 실시간 채팅(개인/그룹), 프로젝트 예산 관리
 - 역할 분담 : <br>
 ![image](https://github.com/user-attachments/assets/a406c40f-7b53-48b9-9ce2-fa007f8cd377) <br>
 
@@ -26,10 +26,10 @@
 (1) 로그인 <br>
 ![로그인 페이지](https://github.com/user-attachments/assets/355e27cd-b825-4099-805a-d73556bf48b8) <br>
 
-(2) 사원등록(회원관리) <br>
+(2) 사원등록(회원가입) <br>
 ![사원등록 페이지](https://github.com/user-attachments/assets/06490e62-9b51-45e8-9fdf-7e3d3b78a92d) <br>
 
-(3) 마이페이지 <br>
+(3) 마이페이지(내정보) <br>
 ![마이 페이지](https://github.com/user-attachments/assets/34f3771a-8379-45bf-a775-59b3806e210e) <br>
 
 (4) 실시간 채팅 <br>
@@ -55,13 +55,23 @@
 ## <화면구현>
 (1) 로그인 <br> 
 ![image](https://github.com/user-attachments/assets/dec89c64-700e-4868-bc72-f42c6e97fc19) <br>
-(2) 사원등록 <br>
-![image](https://github.com/user-attachments/assets/def0162e-74a6-4f84-af1f-ecfadaa288ec) <br>
-(3) 마이페이지 <br>
+- 로그인 - 화면구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a83_login.jsp <br>
 
-(4) 실시간 채팅 <br>
+(2) 사원등록(회원가입) <br>
+![image](https://github.com/user-attachments/assets/def0162e-74a6-4f84-af1f-ecfadaa288ec) <br>
+- 사원등록 - 화면구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a84_register.jsp <br>
+
+(3) 마이페이지(내정보) <br>
+- 마이페이지 - 화면구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp <br>
+
+(4) 실시간 채팅(개인/그룹) <br>
  - 개인 채팅(1:1) <br>
 ![image](https://github.com/user-attachments/assets/7554a380-cba3-4ed9-9f8d-80ee532ee7c4) <br>
+- 
+
 - 그룹 채팅(1:다) <br>
 ![image](https://github.com/user-attachments/assets/39ca6bc8-a4a7-4c34-a8b0-ba9e1648e5f5) <br>
 (5) 프로젝트 예산 관리 <br>
