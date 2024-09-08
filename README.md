@@ -32,7 +32,7 @@
 (3) 마이페이지(내정보) <br>
 ![마이 페이지](https://github.com/user-attachments/assets/34f3771a-8379-45bf-a775-59b3806e210e) <br>
 
-(4) 실시간 채팅 <br>
+(4) 실시간 채팅(개인/그룹) <br>
 ![image](https://github.com/user-attachments/assets/3c9b9942-6dd3-4034-a422-c912c562a97c) <br>
 
 (5) 프로젝트 예산 관리
