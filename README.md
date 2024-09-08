@@ -54,28 +54,42 @@
 7. 결과물 :
 ## <화면구현>
 (1) 로그인 <br> 
+1-1). 로그인 <br>
 ![image](https://github.com/user-attachments/assets/dec89c64-700e-4868-bc72-f42c6e97fc19) <br>
 - 로그인 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a83_login.jsp <br>
+
+1-2). 임시 비밀번호 발송 <br>
+- 임시 비밀번호 - 화면구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/newpwd.jsp <br>
 
 (2) 사원등록(회원가입) <br>
 ![image](https://github.com/user-attachments/assets/def0162e-74a6-4f84-af1f-ecfadaa288ec) <br>
 - 사원등록 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a84_register.jsp <br>
 
+2-2). 사원정보 조회 List <br>
+- 사원정보 조회 - 화면구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/emplist.jsp <br>
+
 (3) 마이페이지(내정보) <br>
 - 마이페이지 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp <br>
 
 (4) 실시간 채팅(개인/그룹) <br>
- - 개인 채팅(1:1) <br>
+4-1). 개인 채팅(1:1) <br>
 ![image](https://github.com/user-attachments/assets/7554a380-cba3-4ed9-9f8d-80ee532ee7c4) <br>
-- 
+- 개인 채팅 - 화면구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/PersonaChatting.jsp <br>
 
-- 그룹 채팅(1:다) <br>
+4-2). 그룹 채팅(1:다) <br>
 ![image](https://github.com/user-attachments/assets/39ca6bc8-a4a7-4c34-a8b0-ba9e1648e5f5) <br>
-(5) 프로젝트 예산 관리 <br>
+- 그룹 채팅 - 화면구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/GroupchatChatting.jsp <br>
 
+(5) 프로젝트 예산 관리 <br>
+- 프로젝트 예산 관리 - 화면구현 상세 코드<br>
+<br>
 
 ## <기능구현>
 (1) 로그인 <br>
