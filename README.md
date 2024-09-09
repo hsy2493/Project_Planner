@@ -61,7 +61,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 
 1-2). 임시 비밀번호 발송 <br>
 ![image](https://github.com/user-attachments/assets/f5345608-e116-485a-92ed-a1e4cd3b1e4b) <br>
-- 임시 비밀번호 - 화면구현 상세 코드 <br>
+- 로그인 : 임시 비밀번호 발송 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/newpwd.jsp <br>
 
 (2) 사원등록(회원가입) <br>
