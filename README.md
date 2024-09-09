@@ -65,19 +65,20 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/newpwd.jsp <br>
 
 (2) 사원등록(회원가입) <br>
+2-1). 사원등록 <br>
 ![image](https://github.com/user-attachments/assets/def0162e-74a6-4f84-af1f-ecfadaa288ec) <br>
 - 사원등록 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a84_register.jsp <br>
 
 2-2). 사원정보 List <br>
 ![image](https://github.com/user-attachments/assets/70ce07a9-7ee3-44ec-b4ca-f425d169fcd2) <br>
-- 사원정보 List - 화면구현 상세 코드 <br>
+- 사원등록 : 사원정보 List - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/emplist.jsp <br>
 
 (3) 마이페이지(내정보) <br>
 3-1). 마이페이지 - 개인정보/사원정보
 ![image](https://github.com/user-attachments/assets/ef814f0b-33e7-48de-900f-8512f13739d5) <br>
-- 마이페이지 : 개인정보 사원정보 - 화면구현 상세 코드 <br>
+- 마이페이지 : 개인정보/사원정보 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp <br>
 
 3-2). 마이페이지 - 새 비밀번호로 변경 <br>
@@ -105,12 +106,12 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 5-1). 프로젝트 예산 항목 <br>
 ![image](https://github.com/user-attachments/assets/fc6def24-ebf4-4acd-93aa-fcc29dd495d2) <br>
 - 프로젝트 예산 관리 : 항목 - 화면구현 상세 코드<br>
-<br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/webapp/WEB-INF/views/budgetprojectList.jsp <br>
 
 5-2). 프로젝트 예산 조회 <br>
 ![image](https://github.com/user-attachments/assets/8b7355f2-9b84-4664-bc92-f547f7ec20e3) <br>
 - 프로젝트 예산 관리 : 조회 - 화면구현 상세 코드<br>
-https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/webapp/WEB-INF/views/budgetprojectList.jsp <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/webapp/WEB-INF/views/budget.jsp <br>
 
 5-3). 프로젝트 예산 등록 <br>
 ![image](https://github.com/user-attachments/assets/f86908f2-e2ce-4fcb-b4e4-ecb6e8e8e08a) <br>
