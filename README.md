@@ -115,7 +115,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 
 5-3). 프로젝트 예산 등록 <br>
 ![image](https://github.com/user-attachments/assets/f86908f2-e2ce-4fcb-b4e4-ecb6e8e8e08a) <br>
-- 프로젝트 예산 관리 : 조회 - 화면구현 상세 코드<br>
+- 프로젝트 예산 관리 : 등록 - 화면구현 상세 코드<br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/webapp/WEB-INF/views/budget.jsp <br>
 
 ## <기능구현>
