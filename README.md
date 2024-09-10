@@ -86,7 +86,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/emplist.jsp <br>
 
 (3) 마이페이지(내정보) <br>
-3-1). 마이페이지 - 개인정보/사원정보
+3-1). 개인정보/사원정보
 ![image](https://github.com/user-attachments/assets/ef814f0b-33e7-48de-900f-8512f13739d5) <br>
 <설명><br>
 -개인 정보에서 이름과 이메일 정보가 확인된다.<br>
@@ -94,14 +94,14 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 - 마이페이지 : 개인정보/사원정보 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp <br>
 
-3-2). 마이페이지 - 새 비밀번호로 변경 <br>
+3-2). 새 비밀번호로 변경 <br>
 ![image](https://github.com/user-attachments/assets/0619692c-b45f-45bf-ab9c-afffc0d29c2d) <br>
 <설명><br>
 -사원번호와 새비밀번호을 입력한 후, 확인 버튼을 클릭하면, 새비밀번호로 변경된다.<br>
 -단, 새 비밀번호 재확인을 진행해야 한다.<br>
 - 마이페이지 : 새 비밀번호로 변경 - 화면구현 상세 코드 <br> https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp<br>
 
-3-3). 마이페이지 - 역할 변경 <br>
+3-3). 역할 변경 <br>
 ![image](https://github.com/user-attachments/assets/de095bed-0fef-40e7-85f2-f0de1b35450a) <br>
 <설명><br>
 -새역할 선택 후, 확인 버튼을 클릭하면, 선택한 역할로 변경된다.<br>
@@ -150,14 +150,26 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 
 ## <기능구현>
 (1) 로그인 <br>
+1-1). 로그인 <br>
+1-2). 임시 비밀번호 발송<br>
 
-(2) 사원등록 <br>
+(2) 사원등록(회원가입) <br>
+2-1). 사원등록 <br>
+2-2). 사원정보 List
 
 (3) 마이페이지 <br>
+3-1). 개인정보/사원정보 <br>
+3-2). 새 비밀번호로 변경 <br>
+3-3). 역할 변경 <br>
 
-(4) 실시간 채팅 <br>
+(4) 실시간 채팅(개인/그룹) <br>
+4-1). 개인채팅(1:1) <br>
+4-2). 그룹채팅(1:다) <br>
 
 (5) 프로젝트 예산 관리 <br>
+5-1). 프로젝트 예산 항목 <br>
+5-2). 프로젝트 예산 조회 <br>
+5-3). 프로젝트 예산 등록 <br>
 
 <b>8. 성과
 - Spring Boot를 이용하여, 프로젝트 진행하는 것을 경험함.
