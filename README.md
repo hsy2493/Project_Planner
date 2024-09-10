@@ -173,5 +173,5 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 
 <b>8. 성과
 - Spring Boot를 이용하여, 프로젝트 진행하는 것을 경험함.
-- SVN(SubVersion)을 이용하여, 팀원간의 코드를 주고 받음.
+- SVN(SubVersion)을 이용하여, 팀원간의 코드를 주고 받는 것을 경험함.
 </b>
