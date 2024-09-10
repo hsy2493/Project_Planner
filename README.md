@@ -56,7 +56,7 @@
 1-1). 로그인 <br>
 ![image](https://github.com/user-attachments/assets/dec89c64-700e-4868-bc72-f42c6e97fc19) <br>
 <설명><br>
--아이디(이메일)와 비밀번호를 입력한 후 로그인을 시도한다. <br>
+-아이디(이메일)와 비밀번호를 입력한 후, 로그인을 시도한다. <br>
 -비밀번호 분실 시, 임시 비밀번호를 통하여 비밀번호 찾기를 권장한다.
 - 로그인 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a83_login.jsp <br>
@@ -97,14 +97,14 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 3-2). 마이페이지 - 새 비밀번호로 변경 <br>
 ![image](https://github.com/user-attachments/assets/0619692c-b45f-45bf-ab9c-afffc0d29c2d) <br>
 <설명><br>
--사원번호와 새비밀번호을 입력한 후 확인 버튼을 클릭하면, 새비밀번호로 변경된다.<br>
--단, 새비밀번호 재확인을 진행해야 한다.<br>
+-사원번호와 새비밀번호을 입력한 후, 확인 버튼을 클릭하면, 새비밀번호로 변경된다.<br>
+-단, 새 비밀번호 재확인을 진행해야 한다.<br>
 - 마이페이지 : 새 비밀번호로 변경 - 화면구현 상세 코드 <br> https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp<br>
 
 3-3). 마이페이지 - 역할 변경 <br>
 ![image](https://github.com/user-attachments/assets/de095bed-0fef-40e7-85f2-f0de1b35450a) <br>
 <설명><br>
--새역할 선택 후에 확인 버튼을 클릭하면, 역할이 변경된다.<br>
+-새역할 선택 후, 확인 버튼을 클릭하면, 선택한 역할로 변경된다.<br>
 - 마이페이지 : 역할 변경 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp <br>
 
@@ -112,17 +112,17 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 4-1). 개인 채팅(1:1) <br>
 ![image](https://github.com/user-attachments/assets/594b80de-60c3-4bc4-b289-46720d5362dd) <br>
 <설명><br>
--내 이름과 상대방 이름 입력 후, 메세지 내용을 입력하면 해당 메세지가 채팅창으로 전송된다.<br>
--단, 입력한 정보 중 서로의 이름이 일치해야 1:1 매칭이 된다.<br>
--채팅창에 1:1 개인 채팅 메세지 내용이 확인된다. <br>
+-내 이름과 상대방 이름 입력 후, 메세지 내용을 입력하면, 해당 메세지가 채팅창으로 전송된다.<br>
+-단, 입력한 정보 중 서로의 이름이 일치해야, 1:1 매칭이 된다.<br>
+-채팅창에 1:1 개인채팅 메세지 내용이 확인된다. <br>
 - 개인 채팅 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/PersonaChatting.jsp <br>
 
 4-2). 그룹 채팅(1:다) <br>
 ![image](https://github.com/user-attachments/assets/f35c5b1f-06ce-4847-9004-622d01cc6342) <br>
 <설명><br>
--내 아이디 입력 후, 메세지 내용을 입력하면 해당 메세지가 채팅창으로 전송된다.<br>
--채팅창에 1:다 단체 채팅 메세지 내용이 확인된다.
+-내 아이디 입력 후, 메세지 내용을 입력하면, 해당 메세지가 채팅창으로 전송된다.<br>
+-채팅창에 1:다 단체 그룹채팅 메세지 내용이 확인된다.
 - 그룹 채팅 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/GroupchatChatting.jsp <br>
 
@@ -130,7 +130,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 5-1). 프로젝트 예산 항목 <br>
 ![image](https://github.com/user-attachments/assets/fc6def24-ebf4-4acd-93aa-fcc29dd495d2) <br>
 <설명><br>
--현재 등록되어 있는 프로젝트 예산 목록이 확인된다.<br>
+-등록되어 있는 프로젝트 예산 목록이 확인된다.<br>
 - 프로젝트 예산 관리 : 항목 - 화면구현 상세 코드<br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/webapp/WEB-INF/views/budgetprojectList.jsp <br>
 
@@ -144,8 +144,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 5-3). 프로젝트 예산 등록 <br>
 ![image](https://github.com/user-attachments/assets/f86908f2-e2ce-4fcb-b4e4-ecb6e8e8e08a) <br>
 <설명><br>
--예산 정보 입력 후, 등록버튼을 선택한다.<br>
--입력한 정보로 새 예산이 등록된다. <br>
+-예산 정보 입력 후, 등록 버튼을 선택하면, 입력한 내용으로 새 예산이 등록된다. <br>
 - 프로젝트 예산 관리 : 등록 - 화면구현 상세 코드<br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/webapp/WEB-INF/views/budget.jsp <br>
 
