@@ -114,6 +114,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 <설명><br>
 -내 이름과 상대방 이름 입력 후, 메세지 내용을 입력하면 해당 메세지가 채팅창으로 전송된다.<br>
 -단, 입력한 정보 중 서로의 이름이 일치해야 1:1 매칭이 된다.<br>
+-채팅창에 1:1 개인 채팅 메세지 내용이 확인된다. <br>
 - 개인 채팅 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/PersonaChatting.jsp <br>
 
@@ -121,6 +122,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 ![image](https://github.com/user-attachments/assets/f35c5b1f-06ce-4847-9004-622d01cc6342) <br>
 <설명><br>
 -내 아이디 입력 후, 메세지 내용을 입력하면 해당 메세지가 채팅창으로 전송된다.<br>
+-채팅창에 1:다 단체 채팅 메세지 내용이 확인된다.
 - 그룹 채팅 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/GroupchatChatting.jsp <br>
 
