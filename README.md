@@ -1,7 +1,7 @@
-  # `Project Planner` - <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)> 📅 <br>
+![image](https://github.com/user-attachments/assets/5330650c-40da-4533-a425-b07b3fe1cb6e)  # `Project Planner` - <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)> 📅 <br>
 1. 작업 기간 : 2024. 07. 22 ~ 2024. 08. 26
 2. 주제 : 프로젝트 관리 시스템(Project Management System) 사이트
-3. 목적 : Project Planner 사이트는 개발자 고객이 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템(Project Management System) 사이트 프로젝트 입니다.
+3. 목적 : Project Planner 사이트는 개발자 고객을 대상으로 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템(Project Management System) 사이트 프로젝트 입니다.
 4. 주요 기능 : 로그인, 사원등록(회원가입), 마이페이지(내정보), 실시간 채팅(개인/그룹), 프로젝트 예산 관리
 - 역할 분담 : <br>
 ![image](https://github.com/user-attachments/assets/a406c40f-7b53-48b9-9ce2-fa007f8cd377) <br>
@@ -76,6 +76,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 <설명><br>
 -사원등록은 인사팀 또는 CEO만 접근이 허용된다.<br>
 -인사 담당자가 이름, 이메일, 부서명(알파벳 약자)를 입력하여 신규 사원을 등록한다.<br>
+-입력한 이메일로 사원번호와 임시 비밀번호가 발송된다.<br>
 - 사원등록 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a84_register.jsp <br>
 
@@ -99,6 +100,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 3-2). 새 비밀번호로 변경 <br>
 ![image](https://github.com/user-attachments/assets/0619692c-b45f-45bf-ab9c-afffc0d29c2d) <br>
 <설명><br>
+-보통, 새로 등록된 신규사원이 발송받은 임시 비밀번호를 새 비밀번호로 변경할 때, 사용한다. <br>
 -사원번호와 새 비밀번호을 입력한 후, 확인 버튼을 클릭하면, 새 비밀번호로 변경된다.<br>
 -단, 새 비밀번호 재확인을 진행해야 한다.<br>
 - 마이페이지 : 새 비밀번호로 변경 - 화면구현 상세 코드 <br> https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp<br>
@@ -153,11 +155,91 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 ## <기능구현>
 (1) 로그인 <br>
 1-1). 로그인 <br>
+- 로그인 시도 <br>
+![image](https://github.com/user-attachments/assets/37c88e77-f310-4e32-b5b1-145337a1ce48) <br>
+![image](https://github.com/user-attachments/assets/930f2639-67e0-4f47-930a-e89d7271813b) <br>
+![image](https://github.com/user-attachments/assets/a8dc2e51-72b9-42ed-807b-939fc802f104) <br>
+<설명> <br>
+-Spring mvc 패턴에서 Controller의 List로 사원정보 Model(Database)을 가져오고, 이를 if문과 session scope 범위로 활용하여, <br>
+로그인 유효성 검사를 시도한다.<br>
+- 이메일 저장하기 <br>
+![image](https://github.com/user-attachments/assets/774c714a-64fb-4767-a89a-a499ef969431) <br>
+<설명> <br>
+-Cookie의 값과 if문을 활용하여, chekbox가 null 값이 아닌 경우, 30일 동안 입력한 이메일을 저장한다. <br>
+-단, 최초 한 번은 로그인에 성공해야 한다.  <br>
+- 로그인 Controller - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a01_controller/UserController.java <br>
+
+- 로그인 성공 <br>
+![image](https://github.com/user-attachments/assets/3879d4d4-eaf8-4864-be8f-12656e5db6fd)
+<설명> <br>
+-로그인 성공 시, if문을 활용하여, 메인 페이지로 리다이랙션 한다. <br>
+
+- 로그인 실패 <br>
+  ![image](https://github.com/user-attachments/assets/d12e4c2c-9be0-485a-bca7-9116b6931d7b) <br>
+<설명> <br>
+-로그인 실패 시, 로그인 페이지에 머문다. <br>
+
+- 로그아웃 <br>
+![image](https://github.com/user-attachments/assets/63ad44be-dbfd-4e11-b066-1d7d40881476) <br>
+<설명> <br>
+-session 범위를 활용하여, 로그아웃 시, 로그인된 사원정보를 초기화(무효화) 한다. <br>
+
 1-2). 임시 비밀번호 발송<br>
+![image](https://github.com/user-attachments/assets/ff335d59-e209-494c-bfe6-d9ccacf36dda) <br>
+![image](https://github.com/user-attachments/assets/e5e437fd-2ab0-48c1-91a9-6cf5479a95c0) <br>
+![image](https://github.com/user-attachments/assets/2f510e41-4c87-4645-9e7a-cd9012801e65) <br>
+
+![image](https://github.com/user-attachments/assets/54703ba9-a4ad-4ca5-9480-77d079c365e9) <br>
+<설명> <br>
+-MimeMessage 객체와 try문을 활용하여, 입력한 이메일로 임시 비밀번호가 발송되며, <br>
+이는 수정된 임시 비밀번호로 사원정보 DB에 저장된다. <br>
+- 로그인 : 임시 비밀번호 발송 - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a02_service/MailService.java <br>
 
 (2) 사원등록(회원가입) <br>
 2-1). 사원등록 <br>
-2-2). 사원정보 List
+- 사원등록 <br>
+![image](https://github.com/user-attachments/assets/9a88d279-640a-4531-a417-74831252d679) <br>
+![image](https://github.com/user-attachments/assets/4dc65626-50c0-4f4e-9649-3797bc8820c7) <br>
+![image](https://github.com/user-attachments/assets/a13e9798-f4c9-47c6-a520-155b6ae4b86d) <br>
+![image](https://github.com/user-attachments/assets/9989bd64-70ad-45ed-9adf-7d986be75c14) <br>
+<설명> <br>
+-MimeMessage 객체와 try문을 활용하여, 입력한 이메일로 사원번호와 랜덤 비밀번호가 발송되면서,<br>
+사원정보 DB에 등록된다.<br>
+- 사원등록 : 사원등록 - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a02_service/MailService.java<br>
+
+- 랜덤 비밀번호 생성 <br>
+  ![image](https://github.com/user-attachments/assets/e1f15c77-6da1-4709-b13c-bc3ae747ccaa)
+<설명><br>
+-Character(유틸리티)를 활용하여, ASCII(아스키) 코드 번호를 이용하여 랜덤 문자 값으로 텍스트를 생성한다. <br>
+- 사원등록 : 랜덤 비밀번호 생성 - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a04_vo/Util.java <br>
+
+- 사원번호 생성 <br>
+![image](https://github.com/user-attachments/assets/24a28f38-8eb4-46a5-944e-bd38b05a4d08) <br>
+<설명> <br>
+-SQL문을 활용하여, 입사년도 2024년도, 부서명, 등록순서 번호의 조건으로 생성된다. <br>
+- 사원등록 : 사원번호 생성 - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a03_dao/RegisterDao.java <br>
+
+- 이메일 중복확인 <br>
+![image](https://github.com/user-attachments/assets/d9dbf518-4ec9-430d-8c04-a5d12a3a6098) <br>
+![image](https://github.com/user-attachments/assets/031144f2-74af-45fd-9fd5-3d7a13ee418a) <br>
+![image](https://github.com/user-attachments/assets/fc2b74ad-abb9-4bcb-adc9-af8bfeafa553) <br>
+<설명><br>
+-3항 연산자를 활용하여, 사원정보 DB에 저장된 이메일과 이메일 중복확인(유효성 검사)을 한다. <br>
+- 사원정보 : 이메일 중복확인 - 기능구현 상세 코드<br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a01_controller/RegisterController.java <br>
+
+2-2). 사원정보 List <br>
+![image](https://github.com/user-attachments/assets/f8646582-b808-4676-a0a7-6f8b9876a919) <br>
+![image](https://github.com/user-attachments/assets/b031d806-0445-47ed-a756-4096bae1f08a) <br>
+<설명> <br>
+-SQL문에서Join을 활용하여, 프로젝트 활동 여부 확인(참여 중/미참여 중)이 가능하다.<br>
+- 사원등록 : 사원정보 List - 기능구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a03_dao/UserDao.java<br>
 
 (3) 마이페이지 <br>
 3-1). 개인정보/사원정보 <br>
