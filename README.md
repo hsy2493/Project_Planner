@@ -82,7 +82,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 2-2). 사원정보 List <br>
 ![image](https://github.com/user-attachments/assets/70ce07a9-7ee3-44ec-b4ca-f425d169fcd2) <br>
 <설명><br>
--사원정보 Lis는 프로젝트 매니저(PM)만 접근이 허용된다.<br>
+-사원정보 Lis는 프로젝트 매니저(Product Manager)만 접근이 허용된다.<br>
 -사원명 또는 역할 중 한가지 정보 입력 후, 검색 버튼을 클릭하면, 사원 상세정보가 검색된다.
 - 사원등록 : 사원정보 List - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/emplist.jsp <br>
