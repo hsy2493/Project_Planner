@@ -66,7 +66,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 1-2). 임시 비밀번호 발송 <br>
 ![image](https://github.com/user-attachments/assets/f5345608-e116-485a-92ed-a1e4cd3b1e4b) <br>
 <설명><br>
--이메일 입력 후 전송버튼을 클릭하면, 임시 비밀번호가 발송된다.<br>
+-이메일 입력 후, 전송버튼을 클릭하면, 임시 비밀번호가 발송된다.<br>
 - 로그인 : 임시 비밀번호 발송 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/newpwd.jsp <br>
 
@@ -74,16 +74,16 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 2-1). 사원등록 <br>
 ![image](https://github.com/user-attachments/assets/def0162e-74a6-4f84-af1f-ecfadaa288ec) <br>
 <설명><br>
--인사팀 또는 CEO만 접근이 허용된 사원등록 페이지이다.<br>
--인사 담당자가 직접 이름, 이메일, 부서명(알파벳 약자)를 입력하여 사원을 등록한다.<br>
+-사원등록은 인사팀 또는 CEO만 접근이 허용된다.<br>
+-인사 담당자가 이름, 이메일, 부서명(알파벳 약자)를 입력하여 신규 사원을 등록한다.<br>
 - 사원등록 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a84_register.jsp <br>
 
 2-2). 사원정보 List <br>
 ![image](https://github.com/user-attachments/assets/70ce07a9-7ee3-44ec-b4ca-f425d169fcd2) <br>
 <설명><br>
--Product Manager(PM/프로젝트 매니저)만 접근이 허용된 사원정보 List 페이지이다.<br>
--사원명 또는 역할 중 한가지 정보 입력 후, 검색 버튼을 클릭하면 사원정보 검색이 가능하다.
+-사원정보 Lis는 프로젝트 매니저(PM)만 접근이 허용된다.<br>
+-사원명 또는 역할 중 한가지 정보 입력 후, 검색 버튼을 클릭하면, 사원 상세정보가 검색된다.
 - 사원등록 : 사원정보 List - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/emplist.jsp <br>
 
@@ -91,22 +91,22 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 3-1). 개인정보/사원정보
 ![image](https://github.com/user-attachments/assets/ef814f0b-33e7-48de-900f-8512f13739d5) <br>
 <설명><br>
--개인 정보에서 이름과 이메일 정보가 확인된다.<br>
--사원 정보에서 사원번호와 역할 정보가 확인된다. <br>
+-개인 정보에서 이름과 이메일이 확인된다.<br>
+-사원 정보에서 사원번호와 역할이 확인된다. <br>
 - 마이페이지 : 개인정보/사원정보 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp <br>
 
 3-2). 새 비밀번호로 변경 <br>
 ![image](https://github.com/user-attachments/assets/0619692c-b45f-45bf-ab9c-afffc0d29c2d) <br>
 <설명><br>
--사원번호와 새비밀번호을 입력한 후, 확인 버튼을 클릭하면, 새비밀번호로 변경된다.<br>
+-사원번호와 새 비밀번호을 입력한 후, 확인 버튼을 클릭하면, 새 비밀번호로 변경된다.<br>
 -단, 새 비밀번호 재확인을 진행해야 한다.<br>
 - 마이페이지 : 새 비밀번호로 변경 - 화면구현 상세 코드 <br> https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp<br>
 
 3-3). 역할 변경 <br>
 ![image](https://github.com/user-attachments/assets/de095bed-0fef-40e7-85f2-f0de1b35450a) <br>
 <설명><br>
--새역할 선택 후, 확인 버튼을 클릭하면, 선택한 역할로 변경된다.<br>
+-새 역할 선택 후, 확인 버튼을 클릭하면, 선택한 역할로 변경된다.<br>
 - 마이페이지 : 역할 변경 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp <br>
 
@@ -116,7 +116,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 <설명><br>
 -내 이름과 상대방 이름 입력 후, 메세지 내용을 입력하면, 해당 메세지가 채팅창으로 전송된다.<br>
 -단, 입력한 정보 중 서로의 이름이 일치해야, 1:1 매칭이 된다.<br>
--채팅창에 1:1 개인채팅 메세지 내용이 확인된다. <br>
+-채팅창에 1:1 개인채팅 송수신 메세지 내용이 확인된다. <br>
 - 개인 채팅 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/PersonaChatting.jsp <br>
 
@@ -124,7 +124,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 ![image](https://github.com/user-attachments/assets/f35c5b1f-06ce-4847-9004-622d01cc6342) <br>
 <설명><br>
 -내 아이디 입력 후, 메세지 내용을 입력하면, 해당 메세지가 채팅창으로 전송된다.<br>
--채팅창에 1:다 단체 그룹채팅 메세지 내용이 확인된다.
+-채팅창에 1:다 그룹채팅 송수신 메세지 내용이 확인된다.<br>
 - 그룹 채팅 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/GroupchatChatting.jsp <br>
 
