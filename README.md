@@ -1,7 +1,7 @@
-# <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)> 📅 <br>
+# `Project Planner` - <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)> 📅 <br>
 1. 작업 기간 : 2024. 07. 22 ~ 2024. 08. 26
 2. 주제 : 프로젝트 관리 시스템(Project Management System) 사이트
-3. 목적 : Project Planner 사이트는 개발자 고객이 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템(PMS) 사이트 프로젝트 입니다.
+3. 목적 : Project Planner 사이트는 개발자 고객이 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템((Project Management System) 사이트 프로젝트 입니다.
 4. 주요 기능 : 로그인, 사원등록(회원가입), 마이페이지(내정보), 실시간 채팅(개인/그룹), 프로젝트 예산 관리
 - 역할 분담 : <br>
 ![image](https://github.com/user-attachments/assets/a406c40f-7b53-48b9-9ce2-fa007f8cd377) <br>
@@ -15,7 +15,7 @@
 (1) 로그인 & (2) 사원등록(회원가입) & (3) 마이페이지<br>
 ![image](https://github.com/user-attachments/assets/79637149-96fb-4481-a285-eb28d307f117) <br>
 
-(4) 실시간 채팅 <br>
+(4) 실시간 채팅(개인/그룹) <br>
 ![image](https://github.com/user-attachments/assets/c322f044-2a84-4996-a927-1e85424f2968) <br>
 
 (5) 프로젝트 예산 관리 <br>
@@ -174,4 +174,5 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 <b>8. 성과
 - Spring Boot를 이용하여, 프로젝트 진행하는 것을 경험함.
 - SVN(SubVersion)을 이용하여, 팀원간의 코드를 주고 받는 것을 경험함.
+- 프로젝트 테스트 시나리오 작성 과정에서, 다른 팀의 프로젝트를 직접 테스트하거나, 또는 다른 팀으로부터 받은 테스트 결과를 바탕으로 디버깅을 수행하며, 테스트 시나리오를 효과적으로 활용하여 통합 테스트를 진행하는 방식을 학습함.
 </b>
