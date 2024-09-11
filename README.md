@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5330650c-40da-4533-a425-b07b3fe1cb6e)  # `Project Planner` - <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)> 📅 <br>
+# `Project Planner` - <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)> 📅 <br>
 1. 작업 기간 : 2024. 07. 22 ~ 2024. 08. 26
 2. 주제 : 프로젝트 관리 시스템(Project Management System) 사이트
 3. 목적 : Project Planner 사이트는 개발자 고객을 대상으로 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템(Project Management System) 사이트 프로젝트 입니다.
