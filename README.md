@@ -44,6 +44,8 @@
   https://github.com/hsy2493/Project_Planner/issues/1#issue-2509863227 <br>
 - 동영상 자료 - PPT 발표 / Project Planner 사이트 시연 <br>
   https://blog.naver.com/hsy24317/223574635493 <br>
+- 프로젝트 통합 테스트 시나리오 자료 <br>
+  https://github.com/hsy2493/Project_Planner/issues/3#issue-2518452886 <br>
 
 5. 작업 툴 :
 - Front-end : HTML, CSS, javascript, JSP  <br>
