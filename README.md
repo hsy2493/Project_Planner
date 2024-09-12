@@ -286,15 +286,20 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 <설명><br> 
 -Spring mvc 패턴에서 Controller의 if문과 boolean을, Dao의 SQL문에서 update로 활용하여, <br>
 선택한 역할로 변경된다.<br>
+-사원등록 후, 최초 역할은 null값이다.<br>
 - 마이페이지 : 역할 변경 Controller - 기능 구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a01_controller/UserController.java <br>
 - 마이페이지 : 역할 변경 Dao - 기능 구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a03_dao/UserDao.java <br>
 
 <b>8. 성과
+- Mybatis를 활용하여, Insert(등록), Update(수정), Delete(삭제) 기능구현이 가능함.
 - Character(유틸리티)와 ASCII(아스키) 코드 번호를 활용하여, 로그인 중 랜덤 비밀번호(임시 비밀번호) 생성 기능구현이 가능함.
+- SQL문을 활용하여, 사원등록(회원가입) 중 사원번호 생성 기능구현이 가능함.
+- MimeMessage 객체와 try문을 활용하여, 메세지 전송 기능구현을 실연함.
+- WebSocket과 Javascript 함수를 활용하여, 실시간 채팅 1:1 매칭, 메세지 전송 기능구현을 실연함.
+- GitHub에서 포트폴리오 코드, 설명 등 정리가 가능함.
 - Spring Boot를 이용하여, 프로젝트 진행하는 것을 경험함.
-- SVN(SubVersion)을 이용하여, 팀원간의 코드를 주고 받는 것을 경험함.
+- SVN(SubVersion)을 이용하여, 팀원간의 코드 공유를 경험함.
 - 프로젝트 테스트 시나리오 작성 과정에서, 다른 팀의 프로젝트를 직접 테스트하거나, 또는 다른 팀으로부터 받은 테스트 결과를 바탕으로 디버깅을 수행하며, 테스트 시나리오를 효과적으로 활용하여 통합 테스트를 진행하는 방식을 학습함.
-
 </b>
