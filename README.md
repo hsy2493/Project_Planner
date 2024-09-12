@@ -1,4 +1,4 @@
-# `Project Planner` - <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)> 📅 <br>
+![image](https://github.com/user-attachments/assets/d3cfd581-1605-4a8b-82c0-4c90495abc04)# `Project Planner` - <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)> 📅 <br>
 1. 작업 기간 : 2024. 07. 22 ~ 2024. 08. 26
 2. 주제 : 프로젝트 관리 시스템(Project Management System) 사이트
 3. 목적 : Project Planner 사이트는 개발자 고객을 대상으로 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템(Project Management System) 사이트 프로젝트 입니다.
@@ -119,6 +119,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 (4) 실시간 채팅(개인/그룹) <br>
 4-1). 개인 채팅(1:1) <br>
 ![image](https://github.com/user-attachments/assets/594b80de-60c3-4bc4-b289-46720d5362dd) <br>
+![image](https://github.com/user-attachments/assets/009e06db-d331-4d2a-911e-01a7d6571711) <br>
 <설명><br>
 -내 이름과 상대방 이름 입력 후, 메세지 내용을 입력하면, 해당 메세지가 채팅창으로 전송된다.<br>
 -단, 서로의 이름을 동일한 내용으로 입력할 때만, 1:1 매칭이 된다.<br>
@@ -129,6 +130,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 
 4-2). 그룹 채팅(1:다) <br>
 ![image](https://github.com/user-attachments/assets/f35c5b1f-06ce-4847-9004-622d01cc6342) <br>
+![image](https://github.com/user-attachments/assets/d561feab-363f-497f-a39e-801e8d58f686) <br>
 <설명><br>
 -내 아이디 입력 후, 메세지 내용을 입력하면, 해당 메세지가 채팅창으로 전송된다.<br>
 -채팅창에 1:다 그룹채팅 송수신 메세지 내용이 확인된다.<br>
@@ -225,7 +227,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 - 사원번호 생성 <br>
 ![image](https://github.com/user-attachments/assets/24a28f38-8eb4-46a5-944e-bd38b05a4d08) <br>
 <설명> <br>
--SQL문을 활용하여, 입사년도 2024년도, 부서명, 등록순서 번호의 조건으로 생성된다. <br>
+-Spring mvc 패턴에서 Dao의 SQL문을 활용하여, 입사년도 2024년도, 부서명, 등록순서 번호의 조건으로 생성된다. <br>
 - 사원등록 : 사원번호 생성 - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a03_dao/RegisterDao.java <br>
 
@@ -242,37 +244,52 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 ![image](https://github.com/user-attachments/assets/f8646582-b808-4676-a0a7-6f8b9876a919) <br>
 ![image](https://github.com/user-attachments/assets/b031d806-0445-47ed-a756-4096bae1f08a) <br>
 <설명> <br>
--SQL문에서 Select를 활용하여, 조건에 따라 검색한 사원정보를 조회하고, <br>
+-Spring mvc 패턴에서 Dao의 SQL문에서 Select를 활용하여, 조건에 따라 검색한 사원정보를 조회하고, <br>
 Join을 활용하여, 프로젝트 활동 여부 확인(참여 중/미참여 중)이 가능하다.<br>
 - 사원등록 : 사원정보 List - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a03_dao/UserDao.java<br>
 
 (3) 마이페이지 <br>
 3-2). 새 비밀번호로 변경 <br>
+![image](https://github.com/user-attachments/assets/dc1d1d58-db7e-4f21-856f-52fca266151c) <br>
+![image](https://github.com/user-attachments/assets/f074e64b-6f87-4095-afa7-02417782fd6d) <br>
+<설명><br>
+-Spring mvc 패턴에서 Dao의 SQL문에서 Update를 활용하여, <br>
+사원번호와 새 비밀번호 재확인 유효성 검사에 성공해야만, 비밀번호 변경에 성공한다.<br>
+변경된 비밀번호로 사원정보 DB에 저장된다. <br> 
+- 마이페이지 : 새 비밀번호로 변경 Controller - 기능구현 상세 코드<br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a01_controller/UserController.java <br>
+- 마이페이지 : 새 비밀번호로 변경 Dao - 기능구현 상세 코드<br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a03_dao/UserDao.java <br>
 
 - 비밀번호 변경 실패<br>
 ![image](https://github.com/user-attachments/assets/8a9c1c9d-6922-4533-9b1c-b852e99e1756) <br>
 ![image](https://github.com/user-attachments/assets/3736c69e-10a9-47ee-af21-f25bd9b8a697) <br>
 ![image](https://github.com/user-attachments/assets/5042d996-69e7-406a-9756-ea480a16779c) <br>
+<설명> <br>
+-사원번호가 올바르지 않거나, 비밀번호 유효성 검사 실패 시, <br>
+비밀번호 변경에 실패한다. <br>
  
 - 비밀번호 변경 성공<br>
 ![image](https://github.com/user-attachments/assets/80511aa5-8c25-4b06-b27d-74df6c23479f)<br>
 ![image](https://github.com/user-attachments/assets/2a16b8b2-8dca-4e78-af34-33c91ba241f5)<br>
-
-<br>
-<설명><br>
--<br>
+<설명> <br>
+-사원번호가 올바르고, 비밀번호 유효성 검사 성공 시, <br>
+비밀번호 변경에 성공한다.<br>
 
 3-3). 역할 변경 <br>
-
-(4) 실시간 채팅(개인/그룹) <br>
-4-1). 개인채팅(1:1) <br>
-4-2). 그룹채팅(1:다) <br>
-
-(5) 프로젝트 예산 관리 <br>
-5-1). 프로젝트 예산 항목 <br>
-5-2). 프로젝트 예산 조회 <br>
-5-3). 프로젝트 예산 등록 <br>
+![image](https://github.com/user-attachments/assets/cdc69aef-7e11-491e-80ae-ff15d3d84d71) <br>
+![image](https://github.com/user-attachments/assets/58309679-fefb-44a5-9670-b0c4a50d3656) <br>
+![image](https://github.com/user-attachments/assets/1a3a0ff2-0663-4b1b-8cdf-33d384ef2f7c) <br>
+![image](https://github.com/user-attachments/assets/326dd3b4-96bd-48c1-b5c3-9e5c982e372a) <br>
+![image](https://github.com/user-attachments/assets/0904209a-92b0-4902-baae-1ff4f3a33c8d) <br>
+<설명><br> 
+-Spring mvc 패턴에서 Controller의 if문과 boolean을, Dao의 SQL문에서 update로 활용하여, <br>
+선택한 역할로 변경된다.<br>
+- 마이페이지 : 역할 변경 Controller - 기능 구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a01_controller/UserController.java <br>
+- 마이페이지 : 역할 변경 Dao - 기능 구현 상세 코드 <br>
+https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a03_dao/UserDao.java <br>
 
 <b>8. 성과
 - Character(유틸리티)와 ASCII(아스키) 코드 번호를 활용하여, 로그인 중 랜덤 비밀번호(임시 비밀번호) 생성 기능구현이 가능함.
