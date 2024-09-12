@@ -52,7 +52,7 @@
   https://github.com/hsy2493/Project_Planner/issues/3#issue-2518452886 <br>
 
 5. 작업 툴 :
-- Front-end : HTML, CSS, javascript, JSP  <br>
+- Front-end : HTML, CSS, Javascript, JSP  <br>
 - Back-end : Java, Spring mvc, Spring Boot, DataBase(Mybatis) <br>   
 6. 작업 인원 : 3명
   
