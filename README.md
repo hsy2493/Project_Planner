@@ -41,10 +41,14 @@
 ![image](https://github.com/user-attachments/assets/e7d228e2-ea34-4806-9af5-bebd026e8710) <br>
 
 - PPT 자료 <br>
+![image](https://github.com/user-attachments/assets/58da1adc-d838-41d8-9284-3126839522be) <br>
   https://github.com/hsy2493/Project_Planner/issues/1#issue-2509863227 <br>
 - 동영상 자료 - PPT 발표 / Project Planner 사이트 시연 <br>
+![image](https://github.com/user-attachments/assets/c9e5505e-a521-422e-a66b-ab942e774f45) <br>
+![image](https://github.com/user-attachments/assets/0dc1ddc2-f09b-470d-a639-8a7d66b1d0d0) <br>
   https://blog.naver.com/hsy24317/223574635493 <br>
 - 프로젝트 통합 테스트 시나리오 자료 <br>
+![image](https://github.com/user-attachments/assets/03a98b64-f196-49dd-9ebe-e03a7d6d1e7d) <br>
   https://github.com/hsy2493/Project_Planner/issues/3#issue-2518452886 <br>
 
 5. 작업 툴 :
@@ -59,14 +63,14 @@
 ![image](https://github.com/user-attachments/assets/dec89c64-700e-4868-bc72-f42c6e97fc19) <br>
 <설명><br>
 -아이디(이메일)와 비밀번호를 입력한 후, 로그인을 시도한다. <br>
--비밀번호 분실 시, 임시 비밀번호를 통하여 비밀번호 찾기를 권장한다.
+-비밀번호 분실 시, 임시 비밀번호 전송을 통하여 비밀번호 찾기를 권장한다.
 - 로그인 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a83_login.jsp <br>
 
 1-2). 임시 비밀번호 발송 <br>
 ![image](https://github.com/user-attachments/assets/f5345608-e116-485a-92ed-a1e4cd3b1e4b) <br>
 <설명><br>
--이메일 입력 후, 전송버튼을 클릭하면, 임시 비밀번호가 발송된다.<br>
+-이메일 입력 후, 전송버튼을 클릭하면, 이메일로 임시 비밀번호가 발송된다.<br>
 - 로그인 : 임시 비밀번호 발송 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/newpwd.jsp <br>
 
@@ -75,15 +79,15 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 ![image](https://github.com/user-attachments/assets/def0162e-74a6-4f84-af1f-ecfadaa288ec) <br>
 <설명><br>
 -사원등록은 인사팀 또는 CEO만 접근이 허용된다.<br>
--인사 담당자가 이름, 이메일, 부서명(알파벳 약자)를 입력하여 신규 사원을 등록한다.<br>
--입력한 이메일로 사원번호와 임시 비밀번호가 발송된다.<br>
+-인사 담당자가 이름, 이메일, 부서명(알파벳 약자)를 입력하여, 신규 사원을 등록한다.<br>
+-입력한 이메일로, 사원번호와 임시 비밀번호가 발송된다.<br>
 - 사원등록 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a84_register.jsp <br>
 
 2-2). 사원정보 List <br>
 ![image](https://github.com/user-attachments/assets/70ce07a9-7ee3-44ec-b4ca-f425d169fcd2) <br>
 <설명><br>
--사원정보 Lis는 프로젝트 매니저(Product Manager)만 접근이 허용된다.<br>
+-사원정보 Lis는 프로젝트 매니저(project manager)만 접근이 허용된다.<br>
 -사원명 또는 역할 중 한가지 정보 입력 후, 검색 버튼을 클릭하면, 사원 상세정보가 검색된다.
 - 사원등록 : 사원정보 List - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/emplist.jsp <br>
@@ -100,9 +104,9 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 3-2). 새 비밀번호로 변경 <br>
 ![image](https://github.com/user-attachments/assets/0619692c-b45f-45bf-ab9c-afffc0d29c2d) <br>
 <설명><br>
--보통, 새로 등록된 신규사원이 발송받은 임시 비밀번호를 새 비밀번호로 변경할 때, 사용한다. <br>
+-대부분 신규사원이 발송 받은 임시 비밀번호를 새 비밀번호로 변경할 경우에 사용된다. <br>
 -사원번호와 새 비밀번호을 입력한 후, 확인 버튼을 클릭하면, 새 비밀번호로 변경된다.<br>
--단, 새 비밀번호 재확인을 진행해야 한다.<br>
+-단, 비밀번호 변경을 새 비밀번호 재확인을 진행해야 한다.<br>
 - 마이페이지 : 새 비밀번호로 변경 - 화면구현 상세 코드 <br> https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp<br>
 
 3-3). 역할 변경 <br>
@@ -117,7 +121,8 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 ![image](https://github.com/user-attachments/assets/594b80de-60c3-4bc4-b289-46720d5362dd) <br>
 <설명><br>
 -내 이름과 상대방 이름 입력 후, 메세지 내용을 입력하면, 해당 메세지가 채팅창으로 전송된다.<br>
--단, 입력한 정보 중 서로의 이름이 일치해야, 1:1 매칭이 된다.<br>
+-단, 서로의 이름을 동일한 내용으로 입력할 때만, 1:1 매칭이 된다.<br>
+예시로, <나> (내 이름 : 황서영, 상대방 이름 : 홍길동), <상대방> (내 이름 : 홍길동, 상대방 이름 : 황서영) 인 경우, 1:1로 매칭된다.
 -채팅창에 1:1 개인채팅 송수신 메세지 내용이 확인된다. <br>
 - 개인 채팅 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/PersonaChatting.jsp <br>
@@ -166,7 +171,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 ![image](https://github.com/user-attachments/assets/774c714a-64fb-4767-a89a-a499ef969431) <br>
 <설명> <br>
 -Cookie의 값과 if문을 활용하여, chekbox가 null 값이 아닌 경우, 30일 동안 입력한 이메일을 저장한다. <br>
--단, 최초 한 번은 로그인에 성공해야 한다.  <br>
+-단, 최초 한번은 로그인에 성공해야 한다.  <br>
 - 로그인 Controller - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a01_controller/UserController.java <br>
 
@@ -205,8 +210,8 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 ![image](https://github.com/user-attachments/assets/a13e9798-f4c9-47c6-a520-155b6ae4b86d) <br>
 ![image](https://github.com/user-attachments/assets/9989bd64-70ad-45ed-9adf-7d986be75c14) <br>
 <설명> <br>
--MimeMessage 객체와 try문을 활용하여, 입력한 이메일로 사원번호와 랜덤 비밀번호가 발송되면서,<br>
-사원정보 DB에 등록된다.<br>
+-MimeMessage 객체와 try문을 활용하여, <br>
+입력한 이메일로 사원번호와 랜덤 비밀번호가 발송되면서, 사원정보 DB에 등록된다.<br>
 - 사원등록 : 사원등록 - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a02_service/MailService.java<br>
 
@@ -237,13 +242,18 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 ![image](https://github.com/user-attachments/assets/f8646582-b808-4676-a0a7-6f8b9876a919) <br>
 ![image](https://github.com/user-attachments/assets/b031d806-0445-47ed-a756-4096bae1f08a) <br>
 <설명> <br>
--SQL문에서Join을 활용하여, 프로젝트 활동 여부 확인(참여 중/미참여 중)이 가능하다.<br>
+-SQL문에서 Select를 활용하여, 조건에 따라 검색한 사원정보를 조회하고, <br>
+Join을 활용하여, 프로젝트 활동 여부 확인(참여 중/미참여 중)이 가능하다.<br>
 - 사원등록 : 사원정보 List - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a03_dao/UserDao.java<br>
 
 (3) 마이페이지 <br>
 3-1). 개인정보/사원정보 <br>
+
+
 3-2). 새 비밀번호로 변경 <br>
+
+
 3-3). 역할 변경 <br>
 
 (4) 실시간 채팅(개인/그룹) <br>
