@@ -53,7 +53,7 @@
 
 5. 작업 툴 :
 - Front-end : HTML, CSS, javascript, JSP  <br>
-- Back-end : Java, Spring mvc, Spring Boot, DataBase <br>   
+- Back-end : Java, Spring mvc, Spring Boot, DataBase(Mybatis) <br>   
 6. 작업 인원 : 3명
   
 7. 결과물 :
