@@ -248,11 +248,20 @@ Join을 활용하여, 프로젝트 활동 여부 확인(참여 중/미참여 중
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a03_dao/UserDao.java<br>
 
 (3) 마이페이지 <br>
-3-1). 개인정보/사원정보 <br>
-
-
 3-2). 새 비밀번호로 변경 <br>
 
+- 비밀번호 변경 실패<br>
+![image](https://github.com/user-attachments/assets/8a9c1c9d-6922-4533-9b1c-b852e99e1756) <br>
+![image](https://github.com/user-attachments/assets/3736c69e-10a9-47ee-af21-f25bd9b8a697) <br>
+![image](https://github.com/user-attachments/assets/5042d996-69e7-406a-9756-ea480a16779c) <br>
+ 
+- 비밀번호 변경 성공<br>
+![image](https://github.com/user-attachments/assets/80511aa5-8c25-4b06-b27d-74df6c23479f)<br>
+![image](https://github.com/user-attachments/assets/2a16b8b2-8dca-4e78-af34-33c91ba241f5)<br>
+
+<br>
+<설명><br>
+-<br>
 
 3-3). 역할 변경 <br>
 
