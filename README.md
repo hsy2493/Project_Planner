@@ -1,7 +1,7 @@
-# `Project Planner` - <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)> 📅 <br>
+# `Project Planner` - <프로젝트 관리 시스템(PMS) 사이트(최종 프로젝트)>📅 <br>
 1. 작업 기간 : 2024. 07. 22 ~ 2024. 08. 26
 2. 주제 : 프로젝트 관리 시스템(Project Management System) 사이트
-3. 목적 : Project Planner 사이트는 개발자 고객을 대상으로 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템(Project Management System) 사이트 프로젝트 입니다.
+3. 목적 : 개발자를 대상으로 고객이 온라인에서 Project Planner 사이트를 활용하여 실시간 채팅, 간트차트, 캘린더, 게시판, 프로젝트 예산 관리 등의 여러 기능을 이용함으로써 원활한 의사소통으로 효율적인 프로젝트를 진행하는 것을 주목적으로 진행된 프로젝트 관리 시스템(Project Management System) 사이트 프로젝트 입니다.
 4. 주요 기능 : 로그인, 사원등록(회원가입), 마이페이지(내정보), 실시간 채팅(개인/그룹), 프로젝트 예산 관리
 - 역할 분담 : <br>
 ![image](https://github.com/user-attachments/assets/a406c40f-7b53-48b9-9ce2-fa007f8cd377) <br>
@@ -37,7 +37,7 @@
 (5) 프로젝트 예산 관리
 ![예산 관리 페이지](https://github.com/user-attachments/assets/c382bf6a-8354-4190-88d3-d3b1abe63bff) <br>
 
-- 데이터 베이스(Database) 설계/ERD 설계 : <br>
+- 데이터 베이스(Database) 설계/ERD 다이어그램 설계 : <br>
 ![image](https://github.com/user-attachments/assets/e7d228e2-ea34-4806-9af5-bebd026e8710) <br>
 
 - PPT 자료 <br>
@@ -79,7 +79,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 ![image](https://github.com/user-attachments/assets/def0162e-74a6-4f84-af1f-ecfadaa288ec) <br>
 <설명><br>
 -사원등록은 인사팀 또는 CEO만 접근이 허용된다.<br>
--인사 담당자가 이름, 이메일, 부서명(알파벳 약자)를 입력하여, 신규 사원을 등록한다.<br>
+-인사 담당자가 이름, 이메일, 부서명(알파벳 약자)을 입력 후, 신규 사원을 등록한다.<br>
 -입력한 이메일로, 사원번호와 임시 비밀번호가 발송된다.<br>
 - 사원등록 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/a84_register.jsp <br>
@@ -87,7 +87,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 2-2). 사원정보 List <br>
 ![image](https://github.com/user-attachments/assets/70ce07a9-7ee3-44ec-b4ca-f425d169fcd2) <br>
 <설명><br>
--사원정보 Lis는 프로젝트 매니저(project manager)만 접근이 허용된다.<br>
+-사원정보 List는 프로젝트 매니저(project manager)만 접근이 허용된다.<br>
 -사원명 또는 역할 중 한가지 정보 입력 후, 검색 버튼을 클릭하면, 사원 상세정보가 검색된다.
 - 사원등록 : 사원정보 List - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/emplist.jsp <br>
@@ -104,8 +104,8 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 3-2). 새 비밀번호로 변경 <br>
 ![image](https://github.com/user-attachments/assets/0619692c-b45f-45bf-ab9c-afffc0d29c2d) <br>
 <설명><br>
--대부분 신규사원이 발송 받은 임시 비밀번호를 새 비밀번호로 변경할 경우에 사용된다. <br>
--사원번호와 새 비밀번호을 입력한 후, 확인 버튼을 클릭하면, 새 비밀번호로 변경된다.<br>
+-대부분 신규사원이 발송 받은 임시 비밀번호를 새 비밀번호로 변경할 경우에 사용한다. <br>
+-사원번호와 새 비밀번호을 입력 후, 확인 버튼을 클릭하면, 새 비밀번호로 변경된다.<br>
 -단, 비밀번호 변경을 새 비밀번호 재확인을 진행해야 한다.<br>
 - 마이페이지 : 새 비밀번호로 변경 - 화면구현 상세 코드 <br> https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/mypage.jsp<br>
 
@@ -123,7 +123,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_p
 <설명><br>
 -내 이름과 상대방 이름 입력 후, 메세지 내용을 입력하면, 해당 메세지가 채팅창으로 전송된다.<br>
 -단, 서로의 이름을 동일한 내용으로 입력할 때만, 1:1 매칭이 된다.<br>
-예시로, <나> (내 이름 : 황서영, 상대방 이름 : 홍길동), <상대방> (내 이름 : 홍길동, 상대방 이름 : 황서영) 인 경우, 1:1로 매칭된다.
+예시로, <나> (내 이름 : 황서영, 상대방 이름 : 홍길동), <상대방> (내 이름 : 홍길동, 상대방 이름 : 황서영) 인 경우, 1:1로 매칭된다.  <br>
 -채팅창에 1:1 개인채팅 송수신 메세지 내용이 확인된다. <br>
 - 개인 채팅 - 화면구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/project_planner/src/main/webapp/WEB-INF/views/PersonaChatting.jsp <br>
@@ -213,7 +213,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 ![image](https://github.com/user-attachments/assets/9989bd64-70ad-45ed-9adf-7d986be75c14) <br>
 <설명> <br>
 -MimeMessage 객체와 try문을 활용하여, <br>
-입력한 이메일로 사원번호와 랜덤 비밀번호가 발송되면서, 사원정보 DB에 등록된다.<br>
+입력한 이메일로 사원번호와 랜덤 비밀번호가 발송되면서, 사원정보 DB에 저장(등록)된다.<br>
 - 사원등록 : 사원등록 - 기능구현 상세 코드 <br>
 https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/java/com/web/projectplanner/a02_service/MailService.java<br>
 
@@ -298,8 +298,8 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 - SQL문을 활용하여, 사원등록(회원가입) 중 사원번호 생성 기능구현이 가능함.
 - MimeMessage 객체와 try문을 활용하여, 메세지 전송 기능구현을 실연함.
 - WebSocket과 Javascript 함수를 활용하여, 실시간 채팅 1:1 매칭, 메세지 전송 기능구현을 실연함.
-- GitHub에서 포트폴리오 코드, 설명 등 정리가 가능함.
-- Spring Boot를 이용하여, 프로젝트 진행하는 것을 경험함.
-- SVN(SubVersion)을 이용하여, 팀원간의 코드 공유를 경험함.
+- GitHub에서 포트폴리오 코드, 설명 등의 정리가 가능함.
+- Spring Boot(스프링 부트)를 프로그램을 이용하여, 프로젝트 진행하는 것을 경험함.
+- SVN(SubVersion)을 이용하여, 팀원 간의 코드 공유를 경험함.
 - 프로젝트 테스트 시나리오 작성 과정에서, 다른 팀의 프로젝트를 직접 테스트하거나, 또는 다른 팀으로부터 받은 테스트 결과를 바탕으로 디버깅을 수행하며, 테스트 시나리오를 효과적으로 활용하여 통합 테스트를 진행하는 방식을 학습함.
 </b>
