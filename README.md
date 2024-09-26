@@ -299,7 +299,7 @@ https://github.com/hsy2493/Project_Planner/blob/master/project_planner/src/main/
 - MimeMessage 객체와 try문을 활용하여, 메세지 전송 기능구현을 실연함.
 - WebSocket과 Javascript 함수를 활용하여, 실시간 채팅 1:1 매칭, 메세지 전송 기능구현을 실연함.
 - GitHub에서 포트폴리오 코드, 설명 등의 정리가 가능함.
-- Spring Boot(스프링 부트)를 프로그램을 이용하여, 프로젝트 진행하는 것을 경험함.
+- Spring Boot(스프링 부트) 프로그램을 이용하여, 프로젝트 진행하는 것을 경험함.
 - SVN(SubVersion)을 이용하여, 팀원 간의 코드 공유를 경험함.
 - 프로젝트 테스트 시나리오 작성 과정에서, 다른 팀의 프로젝트를 직접 테스트하거나, 또는 다른 팀으로부터 받은 테스트 결과를 바탕으로 디버깅을 수행하며, 테스트 시나리오를 효과적으로 활용하여 통합 테스트를 진행하는 방식을 학습함.
 </b>
